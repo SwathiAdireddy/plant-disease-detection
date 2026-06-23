@@ -55,7 +55,7 @@ streamlit run app.py
 plant-disease-detection/
 │
 ├── app.py
-├── plant_disease_mobilenet.keras
+├── plant_disease_mobilenet.h5
 ├── requirements.txt
 ├── README.md
 └── Plant_Disease_Detection.ipynb
