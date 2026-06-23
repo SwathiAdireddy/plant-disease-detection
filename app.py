@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
-model = tf.keras.models.load_model("plant_disease_mobilenet.keras")
+model = tf.keras.models.load_model("plant_disease_mobilenet.h5")
 
 class_names = [
     "Pepper__bell___Bacterial_spot",
