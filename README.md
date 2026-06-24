@@ -1,84 +1,158 @@
-# Plant Disease Detection
+# 🌿 Plant Disease Detection
 
-A deep learning web application that detects plant diseases from leaf images using MobileNetV2 Transfer Learning.
+A Deep Learning-based web application that detects plant diseases from leaf images using Transfer Learning with MobileNetV2.
 
-## Dataset
+The application allows users to upload an image of a plant leaf and receive an instant prediction of the plant's health condition or disease class.
 
-PlantVillage Dataset
+---
 
-## Features
+## 📌 Project Overview
 
-- Detects 15 different plant disease classes
-- Built using MobileNetV2 Transfer Learning
-- User-friendly web interface with Streamlit
-- Upload a leaf image and get an instant prediction
+This project uses a pre-trained MobileNetV2 model as a feature extractor and adds custom classification layers to identify plant diseases from leaf images.
 
-## Technologies Used
+The model was trained on the PlantVillage dataset and can classify 15 different plant health conditions across Tomato, Potato, and Pepper plants.
+
+---
+
+## 📂 Dataset
+
+Dataset: PlantVillage Dataset
+
+The dataset contains labeled images of healthy and diseased plant leaves.
+
+---
+
+## 🚀 Features
+
+- Upload plant leaf images through a Streamlit web interface
+- Detects 15 plant disease classes
+- Transfer Learning using MobileNetV2
+- Displays prediction confidence score
+- Shows Top 3 predictions with probabilities
+- Fast and lightweight inference
+
+---
+
+## 🛠 Technologies Used
 
 - Python
 - TensorFlow / Keras
 - MobileNetV2
 - Streamlit
 - NumPy
-- Pillow
+- Pillow (PIL)
 - Scikit-learn
 
-## Model Performance
+---
 
-- Validation Accuracy: 93%
-- 15 Disease Classes
+## 🧠 Model Architecture
 
-## How to Run
+- MobileNetV2 (ImageNet Pretrained)
+- GlobalAveragePooling2D
+- Dense Layer (128 neurons, ReLU)
+- Dropout (0.3)
+- Dense Output Layer (15 classes, Softmax)
 
-1. Clone the repository:
+Transfer Learning was used by freezing the MobileNetV2 base model and training only the custom classification layers.
+
+---
+
+## 📊 Model Performance
+
+- Validation Accuracy: ~93%
+- Number of Classes: 15
+
+Evaluation was performed using:
+- Accuracy
+- Confusion Matrix
+- Precision
+- Recall
+- F1 Score
+
+---
+
+## 📋 Disease Classes
+
+### Pepper
+- Pepper Bell Bacterial Spot
+- Pepper Bell Healthy
+
+### Potato
+- Potato Early Blight
+- Potato Late Blight
+- Potato Healthy
+
+### Tomato
+- Tomato Bacterial Spot
+- Tomato Early Blight
+- Tomato Late Blight
+- Tomato Leaf Mold
+- Tomato Septoria Leaf Spot
+- Tomato Spider Mites
+- Tomato Target Spot
+- Tomato Yellow Leaf Curl Virus
+- Tomato Mosaic Virus
+- Tomato Healthy
+
+---
+
+## 📁 Project Structure
+
+```text
+plant-disease-detection/
+│
+├── app.py
+├── plant_weights.weights.h5
+├── requirements.txt
+├── README.md
+└── PlantDiseaseDetection.ipynb
+```
+
+---
+
+## ▶️ How to Run Locally
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/SwathiAdireddy/plant-disease-detection.git
 cd plant-disease-detection
 ```
 
-2. Install dependencies:
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the Streamlit app:
+### 3. Run the Streamlit App
 
 ```bash
 streamlit run app.py
 ```
 
-## Project Structure
+### 4. Open in Browser
+
+Streamlit will provide a local URL similar to:
 
 ```text
-plant-disease-detection/
-│
-├── app.py
-├── plant_disease_mobilenet.h5
-├── requirements.txt
-├── README.md
-└── Plant_Disease_Detection.ipynb
+http://localhost:8501
 ```
 
-## Classes Detected
+Open the URL in your browser and upload a leaf image for prediction.
 
-- Pepper__bell___Bacterial_spot
-- Pepper__bell___healthy
-- Potato___Early_blight
-- Potato___Late_blight
-- Potato___healthy
-- Tomato_Bacterial_spot
-- Tomato_Early_blight
-- Tomato_Late_blight
-- Tomato_Leaf_Mold
-- Tomato_Septoria_leaf_spot
-- Tomato_Spider_mites_Two_spotted_spider_mite
-- Tomato__Target_Spot
-- Tomato__Tomato_YellowLeaf__Curl_Virus
-- Tomato__Tomato_mosaic_virus
-- Tomato_healthy
+---
 
-## Author
+## ⚠️ Notes
 
-Swathi
+- For best results, upload clear images of a single leaf.
+- Images should be well-lit and in focus.
+- Predictions may vary for images significantly different from the training dataset.
+
+---
+
+## 👩‍💻 Author
+
+**Swathi**
+
+Deep Learning and Computer Vision Project using TensorFlow, Keras, MobileNetV2, and Streamlit.
