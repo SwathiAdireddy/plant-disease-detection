@@ -45,7 +45,7 @@ The dataset contains labeled images of healthy and diseased plant leaves.
 
 ### Top 3 Predictions
 
-![top_3_Predictions](images/top_3_predictions.png)
+![Top 3 Predictions](images/top_3_predictions.png)
 
 
 ## 🛠 Technologies Used
