@@ -33,6 +33,21 @@ The dataset contains labeled images of healthy and diseased plant leaves.
 
 ---
 
+## 📸 Application Preview
+
+### Home Page
+
+![Home Page](images/home_page.png)
+
+### Disease Prediction
+
+![Disease Prediction](images/prediction.png)
+
+### Healthy Leaf Prediction
+
+![top_3_Predictions](images/top_3_predictions.png)
+
+
 ## 🛠 Technologies Used
 
 - Python
