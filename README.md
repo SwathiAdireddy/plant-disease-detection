@@ -105,7 +105,12 @@ plant-disease-detection/
 ├── plant_weights.weights.h5
 ├── requirements.txt
 ├── README.md
-└── PlantDiseaseDetection.ipynb
+├── PlantDiseaseDetection.ipynb
+│
+└── images/
+    ├── home_page.png
+    ├── prediction.png
+    └── top_3_predictions.png
 ```
 
 ---
